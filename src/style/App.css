@@ -1,0 +1,56 @@
+.dropdown-menu {
+  background: #6100e1;
+  border: solid 2px #28005d;
+}
+
+.dropdown-menu :hover {
+  background: #5000b8;
+}
+
+.dropdown-menu .dropdown-item {
+  color: whitesmoke;
+}
+
+.dropdown-menu .dropdown-item :hover {
+  color: aliceblue;
+}
+
+.hero-section {
+  background-color: #6100e1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  padding: 10%;
+  color: whitesmoke;
+}
+
+.hero-section .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section .hero-img {
+  width: 90%;
+}
+/*# sourceMappingURL=App.css.map */
