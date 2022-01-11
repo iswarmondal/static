@@ -1,6 +1,7 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import GetStarted from '../components/GetStarted'
 import Hero from '../components/Hero'
+import Infographics from '../components/Infographics'
 import NavBar from '../components/NavBar'
 
 function Home()
@@ -9,7 +10,8 @@ function Home()
         <main>
             <NavBar />
             <Hero />
-            <Link to={"/about"}>about</Link>
+            <Infographics />
+            <GetStarted />
         </main>
     )
 }

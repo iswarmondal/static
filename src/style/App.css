@@ -1,3 +1,8 @@
+* a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .dropdown-menu {
   background: #6100e1;
   border: solid 2px #28005d;
@@ -30,7 +35,7 @@
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  padding: 10%;
+  padding: 7% 10%;
   color: whitesmoke;
 }
 
@@ -52,5 +57,165 @@
 
 .hero-section .hero-img {
   width: 90%;
+}
+
+.infographic {
+  background-color: #7e1737;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.infographic .info-pillars-wrapper {
+  padding-top: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.infographic .info-pillars-wrapper .info-pillars {
+  background-color: #ab0036;
+  margin: 0 0.5%;
+  border: solid 0.1px rgba(0, 0, 0, 0.452);
+  padding: 4% 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+}
+
+.infographic .info-pillars-wrapper .info-pillars img {
+  max-width: 30%;
+}
+
+@media (max-width: 685px) {
+  .infographic .info-pillars-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .infographic .info-pillars-wrapper .info-pillars {
+    padding: 10%;
+  }
+  .infographic .info-pillars-wrapper .info-pillars img {
+    max-width: 20%;
+  }
+}
+
+.get-started {
+  height: 50%;
+  background-color: #400070;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.get-started .get-started-bg {
+  width: 95%;
+  margin-top: 2%;
+  padding: 5%;
+  background-image: url("https://cdn.pixabay.com/photo/2019/11/30/16/31/comic-4663592_1280.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.get-started .get-started-bg .get-started-pillar {
+  width: 80%;
+  padding: 3rem;
+  background-color: #6000ab62;
+  -webkit-backdrop-filter: blur(3rem);
+          backdrop-filter: blur(3rem);
+  border: solid 2px rgba(255, 255, 255, 0.404);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.get-started .get-started-bg .get-started-pillar div .btn {
+  max-width: 10rem;
+  padding: 0.7rem;
+}
+
+.get-started .get-started-bg .get-started-pillar img {
+  width: 30%;
+  -webkit-animation: rocketTakesOff 5000ms ease-in-out infinite;
+          animation: rocketTakesOff 5000ms ease-in-out infinite;
+}
+
+@-webkit-keyframes rocketTakesOff {
+  0% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  50% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  100% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+}
+
+@keyframes rocketTakesOff {
+  0% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  50% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  100% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
 }
 /*# sourceMappingURL=App.css.map */
