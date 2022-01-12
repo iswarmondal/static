@@ -1,0 +1,51 @@
+@media (max-width: 685px) {
+  .info-pillars-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info-pillars-wrapper .info-pillars {
+    padding: 10%;
+  }
+  .info-pillars-wrapper .info-pillars img {
+    max-width: 20%;
+  }
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem !important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer menu {
+    max-width: 70%;
+  }
+  .about-us section {
+    padding: 2rem 3rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer menu {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=mediaQuries.css.map */

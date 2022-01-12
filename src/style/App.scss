@@ -1,8 +1,15 @@
+// Imports
+@import "mediaQuries";
+
 // Defults
 *{
-  a{
-    color: inherit;
-    text-decoration: none;
+  #root{
+    background: linear-gradient(300deg, #410097, #9746ff);
+
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
   }
 }
 
@@ -22,9 +29,10 @@
   }
 }
 
+// Home page =======
 // Hero Section
 .hero-section{
-  background-color: #6100e1;
+  // background: linear-gradient(300deg, #410097, #9746ff);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-column-gap: 3rem;
@@ -49,7 +57,7 @@
 
 // Infographic Content section
 .infographic{
-  background-color: #7e1737;
+  background-color: #5900ad;
   color: rgb(255, 255, 255);
   display: flex;
   padding: 2%;
@@ -63,31 +71,18 @@
     align-items: center;
     justify-content: center;
   
-  .info-pillars{
-    background-color: #ab0036;
-    margin: 0 0.5%;
-    border: solid 0.1px rgba(0, 0, 0, 0.452);
-    padding: 4% 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
-
-    img{
-      max-width: 30%;
-    }
-  }
-
-  @media (max-width: 685px) {
-    &{
+    .info-pillars{
+      background-color: #310093;
+      margin: 2%;
+      border: solid 0.1px rgba(0, 0, 0, 0.452);
+      padding: 4% 1rem;
+      display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-self: center;
 
-      .info-pillars{
-        padding: 10%;
-        img{
-          max-width: 20%;
-        }
-      }
+      img{
+        max-width: 30%;
       }
     }
   }
@@ -96,7 +91,7 @@
 // Get Started Section
 .get-started{
   height: 50%;
-  background-color: #400070;
+  // background-color: #002b89;
   color: rgb(255, 255, 255);
   display: flex;
   padding: 2%;
@@ -116,7 +111,7 @@
     .get-started-pillar{
       width: 80%;
       padding: 3rem;
-      background-color: #6000ab62;
+      background-color: #56009762;
       backdrop-filter: blur(3rem);
       border: solid 2px rgba(255, 255, 255, 0.404);
       display: flex;
@@ -150,4 +145,53 @@
 
     }
   }
+}
+
+// Footer Section
+.footer{
+  background-color: #804dc3;
+  color: white;
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  menu{
+    margin: 0px;
+    padding: 1rem;
+
+    ul{
+      margin: 0px;
+    }
+  }
+}
+
+// About us page =====
+.about-us{
+    .about-img{
+    height: 45vh;
+    background: url("https://pixabay.com/get/gecbe3862f054d6699c97fc1f23a76d4c85fcc2e063545543b92e874f548453b14a2d25956baf1de19315fc03e18a5e252f4903f42706bc0f3534ce0559835169d3ea2ae97d26620cfb8b35afb963f4d8_640.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+      font-size: 50px;
+      color: white;
+      font-weight: 600;
+    }
+
+  }
+  section{
+    background-color: #cea8ff;
+    padding: 5rem 10rem;
+
+    p{
+      font: 1em sans-serif;
+      font-size: large;
+      font-weight: 600;
+    }
+  }
+
 }
